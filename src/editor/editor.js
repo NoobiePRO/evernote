@@ -49,7 +49,6 @@ class EditorComponent extends React.Component{
                 <ReactQuill style={{height: "100vh"}}
                    value = {this.state.text}
                    onChange = {this.updateBody} >
-                       //react quill
                 </ReactQuill>
             </div>
 

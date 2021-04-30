@@ -31,7 +31,6 @@ class SidebarItemComponent extends React.Component{
                              primary={_note.title}
                              secondary={removeHTMLTags(_note.body.substring(0,30))+'...'}
                              >
-
                              </ListItemText>
                     </div>
                     <DeleteIcon onClick={()=> this.deleteNote(_note)}
