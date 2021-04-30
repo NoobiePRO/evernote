@@ -46,7 +46,7 @@ class EditorComponent extends React.Component{
                    value={this.state.title? this.state.title:''}
                    onChange={(e)=>this.updateTitle(e.target.value)}>
                 </input>
-                <ReactQuill
+                <ReactQuill style={{height: "100vh"}}
                    value = {this.state.text}
                    onChange = {this.updateBody} >
                 </ReactQuill>

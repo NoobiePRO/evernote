@@ -5,6 +5,7 @@ import styles from './styles';
 import List from '@material-ui/core/List';
 import { Divider, Button } from '@material-ui/core';
 import SidebarItemComponent from '../sidebaritem/sidebarItem';
+import { blue } from '@material-ui/core/colors';
 
 class SidebarComponent extends React.Component{
     constructor(){
@@ -24,7 +25,7 @@ class SidebarComponent extends React.Component{
             
 
         return(
-            <div className={classes.sidebarContainer}>
+            <div className={classes.sidebarContainer} style={{height: "100vh"}}>
                 <Button type="text" onClick={this.newNoteBtnClick} className={classes.newNoteBtn}>{this.state.addingNote?"CANCEL":"NEW NOTE "}</Button>
                 {
                     this.state.addingNote ?
@@ -41,6 +42,7 @@ class SidebarComponent extends React.Component{
                             return(
                                 <div key={_index}>
                                     <SidebarItemComponent 
+                                      style={{hover: blue}}
                                       _note={_note}
                                       _index={_index}
                                       selectedNoteIndex={selectedNoteIndex}
