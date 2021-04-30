@@ -48,7 +48,9 @@ class SidebarComponent extends React.Component{
                                       selectedNoteIndex={selectedNoteIndex}
                                       selectNote={this.selectNote}
                                       deleteNote={this.deleteNote}
-                                      ></SidebarItemComponent>
+                                      >
+                                          //hovering
+                                      </SidebarItemComponent>
                                       <Divider></Divider>
                                 </div>
                             )
